@@ -14,3 +14,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#sign-out {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 0;
+  filter: invert(100%) sepia(3%) saturate(482%) hue-rotate(254deg) brightness(116%) contrast(100%);
+  transition: all 10ms ease;
+}
+
+#sign-out:hover {
+  cursor: pointer;
+  filter: invert(67%) sepia(73%) saturate(551%) hue-rotate(306deg) brightness(96%) contrast(108%);
+}

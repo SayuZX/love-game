@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Love Game</title>
@@ -8,7 +8,6 @@
     <link rel="icon" href="public/favicon.ico"/>
     <link rel="stylesheet" href="styles/globals.css">
     <link rel="stylesheet" href="styles/style.css">
-
 </head>
 
 <body>
@@ -21,11 +20,11 @@
         </h1>
 
         <p class="description">
-            Created by Léo Freitas{' '}
+            Created by Léo Freitas
             <code class="code">love is in the air 🥰! kkkkk</code>
         </p>
 
-        <button class="button button--pan"><span>PLAY</span></button>
+        <button class="button button--pan" onclick="window.location.href = '/pages/love_game.html'" ><span>PLAY</span></button>
 
         <div class="grid">
             <a target="_blank" href="https://music.apple.com/br/playlist/pl.u-r2yB16ksRxoPgNk?l=en" class="card">
@@ -61,7 +60,7 @@
 
     <footer class="footer">
         <a href="#" target="_blank" rel="noopener noreferrer">
-            2022 - All rights reserved to Léo ©
+            <span id="year"></span> - All rights reserved to Léo ©
             <span>
                     <img class="logo" src="public/imgs/devleo.png" alt="leo photo"/>
             </span>
@@ -70,3 +69,8 @@
 </div>
 </body>
 </html>
+
+<script>
+    const year = new Date().getFullYear();
+    document.getElementById('year').textContent = year;
+</script>
