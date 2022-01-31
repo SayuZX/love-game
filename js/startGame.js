@@ -1,7 +1,7 @@
 function startGame() {
     var level = document.getElementById("level").value;
     if (level === "") {
-        alert("Selecione um nivel para iniciar o jogo");
+        alert("Select a level to start the game");
         return false;
     }
 

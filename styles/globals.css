@@ -1,9 +1,17 @@
 html,
 body {
+  cursor: url(../public/imgs/arrow.png) 30 30, auto;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+    background-image: url("../public/imgs/laura-vinck-Hyu76loQLdk-unsplash-compress.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ffc9c9;
 }
 
 a {

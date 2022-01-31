@@ -1,13 +1,13 @@
 var height = 0;
 var width = 0;
 var lifes = 1;
-var time = 10;
+var time = 15;
 var createMosquito = 1500;
 var level = window.location.search;
 level = level.replace("?","");
 
 if (level === "normal") {
-} else if (level === "dificil"){
+} else if (level === "hard"){
     var createMosquito = 1000;
 } else if (level === "chucknorris"){
     var createMosquito = 750;
@@ -59,7 +59,11 @@ function randomPosition() {
 
     //Criando elemento html de forma dinâmica
     var mosquito = document.createElement("img");
-    mosquito.src = "../public/imgs/coracao_cheio.png";
+    if(time%7 === 0) {
+        mosquito.src = "../public/imgs/mosca.png";
+    } else {
+        mosquito.src = "../public/imgs/coracao_cheio.png";
+    }
     mosquito.className = randomSize() + " " + randomSide();
     mosquito.style.left = xPosition + "px";
     mosquito.style.top = yPosition + "px";

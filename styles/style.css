@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
 
-body {
-    background-image: url("../public/imgs/kenrick-mills-MF9Wy1NA55I-unsplash.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #ffc9c9;
-}
-
 .container {
     padding: 0 2rem;
     font-family: 'Ubuntu', sans-serif;
